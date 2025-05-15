@@ -74,12 +74,12 @@
       background-color: #218838;
     }
     /* Estilo para o checkbox */
-    .concordo-container {
+    container {
       display: flex;
       align-items: center;
       margin: 10px 0;
     }
-    .concordo-checkbox {
+    checkbox {
       transform: scale(2); /* Aumenta o tamanho do checkbox (1.5x o original) */
       margin-right: 10px; /* Espaço entre o checkbox e o texto */
     }
@@ -130,7 +130,7 @@
       <option value="Trimestral-12 encontros">Trimestral - 12 encontros</option>
       <option value="Semestral-24 encontros">Semestral - 24 encontros</option>
     </select><br>
-    <concordo><input align="center" type="checkbox" transform: scale(2);  id="consentimento" name="consentimento" required> Eu concordo que meus dados pessoais sejam coletados e armazenados para fins de cadastro, conforme a LGPD.</concordo><br>
+    <concordo><checkbox><input align="center" type="checkbox" transform: scale(2);  id="consentimento" name="consentimento" required> Eu concordo que meus dados pessoais sejam coletados e armazenados para fins de cadastro, conforme a LGPD.</concordo></checkbox><br>
 
     <button type="submit">Enviar Cadastro</button>
   </form>
