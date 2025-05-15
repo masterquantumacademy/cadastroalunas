@@ -41,10 +41,15 @@
       font-size: 15px;
        }
     concordo {
-      font-weight: bold;
+      font-family: Monteserrat, Arial;
+      font-weight: normal;
       text-align: center;
       color: #555;
       font-size: 10px;
+      font-style: italic;
+      line-height: 1.4;
+      text-decoration: none;
+      
     }
     input, select {
       width: 100%;
@@ -67,6 +72,19 @@
     button:hover {
       background-color: #218838;
     }
+    /* Estilo para o checkbox */
+    .consent-container {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+    }
+    .consent-checkbox {
+      transform: scale(1.5); /* Aumenta o tamanho do checkbox (1.5x o original) */
+      margin-right: 10px; /* Espaço entre o checkbox e o texto */
+    }
+    .consent-label {
+      font-size: 14px;
+      color: #555;
   </style>
 </head>
 <body>
@@ -110,7 +128,7 @@
       <option value="Trimestral-12 encontros">Trimestral - 12 encontros</option>
       <option value="Semestral-24 encontros">Semestral - 24 encontros</option>
     </select><br>
-    <concordo><input type="checkbox" id="consentimento" name="consentimento" required> Eu concordo que meus dados pessoais sejam coletados e <br> armazenados para fins de cadastro, conforme a LGPD.</label><br>
+    <concordo><input align="center" type="checkbox" id="consentimento" name="consentimento" required> Eu concordo que meus dados pessoais sejam coletados e <br> armazenados para fins de cadastro, conforme a LGPD.</label><br>
 
     <button type="submit">Enviar Cadastro</button>
   </form>
