@@ -97,15 +97,19 @@
 
     <label for="plano">Plano Escolhido:</label><br>
     <select id="plano" name="plano" required>
-      <option value="Pontual-1 encontro">Pontual-1 encontro</option>
-      <option value="Mensal-4 encontros">Mensal</option>
-      <option value="Trimestral-12 encontros">Trimestral</option>
-      <option value="Semestral-24 encontros">Semestral</option>
+      <option value="Pontual-1 encontro">Pontual - 1 encontro</option>
+      <option value="Mensal-4 encontros">Mensal - 4 encontros</option>
+      <option value="Trimestral-12 encontros">Trimestral - 12 encontros</option>
+      <option value="Semestral-24 encontros">Semestral - 24 encontros</option>
     </select><br>
 
     <button type="submit">Enviar Cadastro</button>
   </form>
+<!-- Texto com instruções -->
+  <p class="instructions">
+    Todos os planos contemplam Plantão WhatsApp, Material de Apoio conforme a proposta apresnetada. 
 
+  </p>
   <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwSRJoORbDIhISYSbS7_T8ECmOa65PyyfOIOill8K4i3sVez7PSVJ8vrxtquYGH1t9I0Q/exec'; // Substitui pelo URL do teu Apps Script
     const form = document.getElementById('cadastroForm');
